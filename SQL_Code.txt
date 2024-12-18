@@ -1,0 +1,11 @@
+CREATE TABLE admin_client (
+id INT NOT NULL PRIMARY AUTO_INCREMENT,
+name VARCHAR(100) NOT NULL,
+email VARCHAR(200) NOT NULL UNIQUE,
+phone VARCHAR(20) NULL,
+created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO admin_client (name, email, phone, address)
+VALUES
+('name', 'address', 'phone', 'address');
